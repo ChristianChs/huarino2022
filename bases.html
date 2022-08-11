@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f7f6f6;
+        }
+        table thead{
+            background-color: #0a4f70;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+      <h1>Bases Ciudad Nueva</h1>
+        <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal">Crear</button>
+        <table id="postencuestas" class="table mt-2 table-bordered table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th>ID</th>
+                    <th>BASE</th>
+                    <th>UBICACION</th>
+                    <th>COORDINADOR</th>
+                    <th>CELULAR</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+<div id="modalBases" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="exampleModalLabel">Nuevo Registro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nbase" class="col-form-label">Base :</label>
+            <input type="text" class="form-control" id="nbase" required>
+          </div>
+          <div class="mb-3">
+            <label for="ubicacion" class="col-form-label">Ubicación :</label>
+            <input type="text" class="form-control" id="ubicacion" required>
+          </div>
+          <div class="mb-3">
+            <label for="coordinador" class="col-form-label">Coordinador :</label>
+            <input type="text" class="form-control" id="coordinador" required>
+          </div>
+          <div class="mb-3">
+            <label for="celular" class="col-form-label">Celular :</label>
+            <input type="number" class="form-control" id="celular" required>
+          </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+<script>
+    let tag = document.getElementById('btnCrear')
+</script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- JavaScript alertify-->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<script src="./code.js"></script>
+</body>
+</html>
